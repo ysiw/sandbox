@@ -40,3 +40,6 @@ jobs:
           docker info
           docker context ls
           docker buildx ls
+          export
+          mount
+          systemctl status
