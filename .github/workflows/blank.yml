@@ -37,3 +37,6 @@ jobs:
           ps auxf
           df -h
           ip -4 -o address
+          docker info
+          docker context ls
+          docker buildx ls
