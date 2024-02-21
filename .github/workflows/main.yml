@@ -20,4 +20,7 @@ jobs:
           docker buildx ls
           echo ${{ github.event.push.before }} ${{ github.event.push.after }}
           export
+        env:
+          BEFORE: ${{ github.event.push.before }}
+          AFTER: ${{ github.event.push.after }}
 
