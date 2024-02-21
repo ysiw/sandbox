@@ -18,4 +18,5 @@ jobs:
       - name: Shell run
         run: |
           docker buildx ls
+          echo ${{ github.event.push.before }} ${{ github.event.push.after }}
 
